@@ -128,7 +128,32 @@ section{padding:5.5rem 1.5rem}
 .btn-demo{background:var(--gold);color:var(--navy);font-weight:800;padding:13px 26px;border-radius:var(--radius);font-size:14px;border:none;cursor:pointer;transition:background .15s}
 .btn-demo:hover{background:var(--gold-lt)}
 
-/* MODAL & FLUJO */
+/* ── BENEFICIOS ── */
+.ben-sec{background:var(--off-white)}
+.ben-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:2.5rem}
+.ben-card{background:var(--white);border:1.5px solid var(--soft2);border-radius:var(--radius-lg);padding:1.6rem}
+.ben-icon{width:46px;height:46px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:1.1rem}
+.ben-card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.ben-card p{font-size:13px;color:var(--text2);line-height:1.65}
+.ben-num{font-size:24px;font-weight:900;color:var(--navy);margin-top:.85rem}
+.ben-num-lbl{font-size:11px;color:var(--text3)}
+
+/* ── CTA ── */
+.cta-sec{background:var(--navy2);border-top:3px solid var(--gold);padding:5rem 1.5rem;text-align:center}
+.cta-sec h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:1rem;letter-spacing:-.02em}
+.cta-sec p{font-size:16px;color:rgba(255,255,255,0.55);max-width:500px;margin:0 auto 2rem}
+.cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ── FOOTER ── */
+.site-footer{background:var(--navy);border-top:1px solid var(--navy3);padding:2.5rem 1.5rem}
+.footer-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.footer-logo{font-size:19px;font-weight:800;color:var(--gold-lt)}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.3);margin-top:.3rem}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.4);transition:color .15s}
+.footer-links a:hover{color:var(--gold-lt)}
+
+/* ── MODAL DE PROTOTIPO ── */
 .modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(5,15,30,0.88);align-items:flex-start;justify-content:center;padding:2rem 1rem;overflow-y:auto}
 .modal-overlay.open{display:flex}
 .modal-box{background:var(--white);border-radius:var(--radius-lg);width:100%;max-width:500px;max-height:92vh;overflow-y:auto;border:1.5px solid var(--soft2);margin:auto;box-shadow:0 24px 80px rgba(0,0,0,0.3)}
@@ -161,9 +186,15 @@ section{padding:5.5rem 1.5rem}
 .btn-navy{flex:1;min-width:130px;padding:9px 10px;border-radius:var(--radius);border:none;background:var(--navy);font-size:12px;font-weight:700;cursor:pointer;color:var(--gold-lt);text-align:center;transition:opacity .15s}
 .btn-navy:hover{opacity:.85}
 
-/* PANTALLA PAGO */
+/* PANTALLA PAGO & MÉTODOS */
 .f-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--text2);font-weight:600;display:block;margin-bottom:5px}
 .f-inp{width:100%;padding:10px 12px;border-radius:var(--radius);border:1.5px solid var(--soft2);background:var(--white);color:var(--navy);font-size:13px;font-weight:500;margin-bottom:1rem;transition:border-color .15s}
+.mtabs{display:flex;gap:6px;margin-bottom:1.25rem}
+.mtab{flex:1;padding:10px 5px;border-radius:var(--radius);border:1.5px solid var(--soft2);background:var(--off-white);font-size:11px;font-weight:700;cursor:pointer;color:var(--text2);text-align:center;transition:all .15s}
+.mtab.active{border-color:var(--navy);background:var(--navy);color:var(--gold-lt)}
+.method-desc{font-size:11px;color:var(--text3);margin-top:-8px;margin-bottom:15px;display:none}
+.method-desc.active{display:block}
+
 .btn-confirm{width:100%;padding:12px;border-radius:var(--radius);background:var(--navy);color:var(--gold-lt);border:none;font-size:14px;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px}
 
 /* PROCESANDO */
@@ -174,6 +205,7 @@ section{padding:5.5rem 1.5rem}
 /* ÉXITO & PDF */
 .ok-wrap{padding:2.5rem 1.5rem;text-align:center}
 .ok-circle{width:62px;height:62px;border-radius:50%;background:var(--green-bg);border:2px solid var(--green-border);margin:0 auto 1.25rem;display:flex;align-items:center;justify-content:center}
+.ok-circle svg{width:28px;height:28px;stroke:var(--green-text);fill:none;stroke-width:2.5}
 .ok-folio{font-family:monospace;font-size:11px;color:var(--text3);background:var(--off-white);padding:8px 12px;border-radius:var(--radius);border:1.5px solid var(--soft2);margin:.9rem auto;max-width:310px}
 .btn-pdf{display:inline-flex;align-items:center;gap:7px;padding:12px 24px;border-radius:var(--radius);border:2px solid var(--navy);background:var(--navy);font-size:14px;font-weight:800;cursor:pointer;color:var(--gold-lt);margin-top:1.5rem;transition:all .15s}
 .btn-pdf:hover{background:var(--navy2)}
@@ -197,6 +229,7 @@ section{padding:5.5rem 1.5rem}
     <nav class="nav-links">
       <a href="#como-funciona">Como funciona</a>
       <a href="#productos">Coleccion</a>
+      <a href="#beneficios">Beneficios</a>
       <a href="#demo" class="nav-cta">Ver prototipo</a>
     </nav>
   </div>
@@ -205,9 +238,132 @@ section{padding:5.5rem 1.5rem}
 <section class="hero" id="inicio">
   <div class="hero-eyebrow"><div class="hero-dot"></div>Innovacion · Design Thinking · Transformacion Digital</div>
   <h1>Cada moneda tiene historia.<br><em>Ahora tambien tiene futuro.</em></h1>
-  <p class="hero-sub">MonedaViva convierte cada pieza de Casa Moneda en un activo verificable con certificado PDF oficial.</p>
+  <p class="hero-sub">MonedaViva convierte cada pieza de Casa Moneda en un activo verificable con certificado PDF oficial y pagos integrados.</p>
   <div class="hero-actions">
-    <button class="btn-primary" onclick="openModal()">Ver prototipo en vivo</button>
+    <button class="btn-primary" onclick="openPrototype('Moneda Bicentenario 2010', '$38.500', '#MV-2010-8841X')">Ver prototipo en vivo</button>
+    <a href="#como-funciona" class="btn-ghost">Como funciona &darr;</a>
+  </div>
+  <div class="hero-coins" aria-hidden="true">
+    <div class="hcoin hcoin-sm">$100<br>1998</div>
+    <div class="hcoin hcoin-md">$200<br>2010</div>
+    <div class="hcoin hcoin-lg">Bicentenario<br>$500<br>Chile</div>
+    <div class="hcoin hcoin-md">Oro<br>999,9</div>
+    <div class="hcoin hcoin-sm">Medalla<br>Bronce</div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">+280</div><div class="stat-lbl">Anos de historia</div></div>
+    <div class="stat-item"><div class="stat-num">50.000</div><div class="stat-lbl">Unidades por edicion</div></div>
+    <div class="stat-item"><div class="stat-num">2%</div><div class="stat-lbl">Ingreso por reventa</div></div>
+    <div class="stat-item"><div class="stat-num">PDF</div><div class="stat-lbl">Certificado oficial</div></div>
+    <div class="stat-item"><div class="stat-num">24 hrs</div><div class="stat-lbl">Pago en tu cuenta</div></div>
+  </div>
+</div>
+
+<section class="how-sec" id="como-funciona">
+  <div class="sec-inner">
+    <p class="eyebrow">El proceso</p>
+    <h2 class="sec-title">Del QR al certificado PDF en cuatro pasos</h2>
+    <p class="sec-sub">Cada pieza de Casa Moneda sale con un QR unico grabado. La venta genera el certificado oficial automaticamente.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Compra en tienda</h3>
+        <p>Adquieres tu moneda o medalla en <strong>tienda.casamoneda.cl</strong>. El proceso de compra no cambia en absoluto.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Escanea el QR</h3>
+        <p>Cada pieza lleva un QR unico grabado. Lo escaneas con la camara del celular para ver el historial y autenticidad oficial.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Vende Seguro</h3>
+        <p>El cobro al comprador se procesa via <strong>Transbank / Transferencia / MACH</strong>. Todo integrado en la app.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Descarga tu certificado PDF</h3>
+        <p>Solo tras confirmar la venta, el sistema genera el <strong>certificado PDF oficial</strong> con el nuevo propietario registrado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prod-sec" id="productos">
+  <div class="sec-inner">
+    <p class="eyebrow">Coleccion certificada</p>
+    <h2 class="sec-title">Piezas con certificado MonedaViva</h2>
+    <p class="sec-sub">Elige cualquiera de los siguientes activos reales para simular el proceso comercial y emitir su respectivo PDF.</p>
+    <div class="prod-grid">
+      
+      <div class="prod-card" onclick="openPrototype('Moneda Bicentenario 2010', '$38.500', '#MV-2010-8841X')">
+        <div class="prod-img">
+          <div class="prod-coin" style="width:90px;height:90px;font-size:11px">Chile<br>$200<br>2010</div>
+          <span class="prod-tag tag-cert">Certificada</span>
+        </div>
+        <div class="prod-info">
+          <h3>Moneda Bicentenario 2010</h3>
+          <p>Cobre-Niquel · Edicion limitada 50.000 uds.</p>
+          <div class="prod-footer">
+            <div class="prod-price">$38.500 <span>CLP</span></div>
+            <button class="btn-ver">Ver y vender</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card" onclick="openPrototype('Medalla Bronce Manuel Bulnes', '$33.990', '#MV-1841-B992')">
+        <div class="prod-img">
+          <div class="prod-coin" style="width:90px;height:90px;font-size:10px">Bulnes<br>Bronce<br>1841</div>
+          <span class="prod-tag tag-new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h3>Medalla Bronce · Manuel Bulnes</h3>
+          <p>Serie Presidencial · Pieza historica coleccionable</p>
+          <div class="prod-footer">
+            <div class="prod-price">$33.990 <span>CLP</span></div>
+            <button class="btn-ver">Ver y vender</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card" onclick="openPrototype('Barra de Oro 1 oz 999,9', '$3.200.000', '#MV-ORO-7712')">
+        <div class="prod-img" style="background:linear-gradient(135deg,#FEF9EC,#F0DC8A)">
+          <div class="prod-coin" style="width:90px;height:90px;font-size:10px;background:radial-gradient(circle at 35% 35%,#FFF5CC,#D4A017 50%,#8A6700);border-color:#FFD700">Oro<br>999,9<br>1 oz</div>
+          <span class="prod-tag tag-hot">Alta demanda</span>
+        </div>
+        <div class="prod-info">
+          <h3>Barra de Oro 1 oz · 999,9</h3>
+          <p>Oro fino certificado · Instrumento de inversion</p>
+          <div class="prod-footer">
+            <div class="prod-price">$3.200.000 <span>CLP</span></div>
+            <button class="btn-ver">Ver y vender</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card" onclick="openPrototype('Billete Conmemorativo Neruda 2026', '$42.980', '#MV-NERU-2026')">
+        <div class="prod-img" style="background: #EAF2F8;">
+          <div style="width:120px; height:70px; background:linear-gradient(to right, #A9DFBF, #AED6F1); border:1.5px solid #2E86C1; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:5px; font-size:9px; color:#1B4F72; font-weight:bold;">
+            <div style="display:flex; justify-content:space-between;"><span>2026</span><span>$5000</span></div>
+            <div style="text-align:center; font-size:10px;">Neruda</div>
+            <div style="font-size:7px; letter-spacing:1px">CASA MONEDA CHILE</div>
+          </div>
+          <span class="prod-tag tag-new">Nuevo</span>
+        </div>
+        <div class="prod-info">
+          <h3>Billete Conmemorativo Neruda</h3>
+          <p>Edicion especial 2026 · Polímero de Alta Seguridad</p>
+          <div class="prod-footer">
+            <div class="prod-price">$42.980 <span>CLP</span></div>
+            <button class="btn-ver">Ver y vender</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -215,12 +371,52 @@ section{padding:5.5rem 1.5rem}
   <div class="demo-inner">
     <div class="demo-text">
       <p class="demo-eyebrow">Prototipo en vivo</p>
-      <h2 class="demo-title">Vende tu moneda. Recibe el PDF al final.</h2>
-      <p class="demo-sub">El certificado oficial se genera tras confirmar la venta simulada.</p>
-      <button class="btn-demo" onclick="openModal()">Abrir prototipo interactivo &rarr;</button>
+      <h2 class="demo-title">Vende tu activo. Recibe el PDF oficial al final.</h2>
+      <p class="demo-sub">El certificado de propiedad no se entrega al aire; se acuña digitalmente vinculando al nuevo comprador mediante pasarelas robustas chilenas.</p>
+      <button class="btn-demo" onclick="openPrototype('Moneda Bicentenario 2010', '$38.500', '#MV-2010-8841X')">Abrir prototipo interactivo &rarr;</button>
     </div>
   </div>
 </section>
+
+<section class="ben-sec" id="beneficios">
+  <div class="sec-inner">
+    <p class="eyebrow">Por que elegirnos</p>
+    <h2 class="sec-title">La evolucion de la seguridad numismatica</h2>
+    <p class="sec-sub">Combinamos la centenaria tradición de acuñación física con la inmutabilidad de los registros digitales modernos.</p>
+    <div class="ben-grid">
+      <div class="ben-card">
+        <div class="ben-icon">🔒</div>
+        <h3>Autenticidad Criptográfica</h3>
+        <p>Cada QR grabado es único e imposible de clonar. Vincula la pieza física directamente con la base de datos central de Casa Moneda.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">📈</div>
+        <h3>Mercado Secundario Líquido</h3>
+        <p>Vende tus coleccionables desde cualquier lugar del país con liquidación inmediata directo a tus cuentas bancarias chilenas.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-icon">💰</div>
+        <h3>Regalías de Reventa</h3>
+        <p>Casa Moneda percibe un 2% de comisión automatizada por cada reventa, garantizando el financiamiento de futuros diseños artísticos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <h2>¿Listo para digitalizar tu colección?</h2>
+  <p>Accede de forma anticipada a la transformación del mercado numismático en Chile.</p>
+  <button class="btn-primary" onclick="openPrototype('Moneda Bicentenario 2010', '$38.500', '#MV-2010-8841X')">Probar Sistema Ahora</button>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">MonedaViva</div>
+      <div class="footer-copy">© 2026 Casa Moneda de Chile S.A. Todos los derechos reservados.</div>
+    </div>
+  </div>
+</footer>
 
 <div class="modal-overlay" id="modalPrototype">
   <div class="modal-box">
@@ -232,53 +428,63 @@ section{padding:5.5rem 1.5rem}
       </div>
       <div class="cert-body">
         <div class="coin-row">
-          <div class="cert-vis">Chile<br>$200<br>2010</div>
+          <div class="cert-vis" id="modalAssetVisual">Chile<br>$200<br>2010</div>
           <div class="cert-info">
-            <h2>Moneda Bicentenario 2010</h2>
-            <p>ID Pieza: #MV-2010-8841X</p>
+            <h2 id="modalAssetName">Moneda Bicentenario 2010</h2>
+            <p>ID Pieza: <span id="modalAssetId" style="font-weight:bold;">#MV-2010-8841X</span></p>
             <span class="tag-auth">✓ Original Casa Moneda</span>
           </div>
         </div>
         <div class="divider"></div>
         <div class="dgrid">
-          <div class="dcell"><div class="l">Metal</div><div class="v">Cobre-Níquel</div></div>
-          <div class="dcell"><div class="l">Año Emisión</div><div class="v">2010</div></div>
+          <div class="dcell"><div class="l">Tipo Activo</div><div class="v" id="modalAssetType">Numismático Oficial</div></div>
+          <div class="dcell"><div class="l">Custodia</div><div class="v">Titular Particular</div></div>
           <div class="dcell"><div class="l">Propietario Actual</div><div class="v">Carlos Mendoza</div></div>
           <div class="dcell"><div class="l">Estado Reg.</div><div class="v">Listo para Transferir</div></div>
         </div>
       </div>
       <div class="cert-foot">
         <button class="btn-sm" onclick="closeModal()">Cerrar</button>
-        <button class="btn-navy" onclick="changeScreen('screenPayment')">Iniciar Venta ($38.500)</button>
+        <button class="btn-navy" onclick="changeScreen('screenPayment')">Iniciar Venta (<span id="modalAssetPrice">$38.500</span>)</button>
       </div>
     </div>
 
     <div class="proto-screen" id="screenPayment">
       <div class="m-head">
-        <div class="m-badge">Datos de Transferencia</div>
+        <div class="m-badge">Formulario de Transferencia</div>
         <button class="m-close" onclick="closeModal()">&times;</button>
       </div>
       <div class="cert-body">
         <label class="f-lbl">Nombre del Nuevo Propietario</label>
-        <input type="text" id="buyerName" class="f-inp" value="Ana María Prado" placeholder="Ej: Juan Pérez">
+        <input type="text" id="buyerName" class="f-inp" value="Ana María Prado">
         
         <label class="f-lbl">RUT Nuevo Propietario</label>
-        <input type="text" id="buyerRut" class="f-inp" value="15.662.341-K" placeholder="12.345.678-9">
+        <input type="text" id="buyerRut" class="f-inp" value="15.662.341-K">
 
-        <label class="f-lbl">Email de Notificación</label>
-        <input type="email" id="buyerEmail" class="f-inp" value="ana.prado@email.cl" placeholder="correo@dominio.com">
+        <label class="f-lbl">Email del Adquirente</label>
+        <input type="email" id="buyerEmail" class="f-inp" value="ana.prado@email.cl">
         
+        <label class="f-lbl">Seleccione Método de Pago</label>
+        <div class="mtabs">
+          <div class="mtab active" id="tab-tbk" onclick="selectMethod('tbk')">Transbank</div>
+          <div class="mtab" id="tab-transfer" onclick="selectMethod('transfer')">Transferencia</div>
+          <div class="mtab" id="tab-mach" onclick="selectMethod('mach')">MACH</div>
+        </div>
+
+        <div class="method-desc active" id="desc-tbk">ℹ️ Conexión simulada con Webpay Plus. Admite Crédito, Débito y Prepago.</div>
+        <div class="method-desc" id="desc-transfer">ℹ️ Abono directo a Cuenta Corriente de Casa Moneda con validación automática de fondos.</div>
+        <div class="method-desc" id="desc-mach">ℹ️ Pago inmediato mediante escaneo seguro desde tu billetera digital MACH Bci.</div>
+
         <div class="divider"></div>
-        <p style="font-size: 12px; color: var(--text2); margin-bottom: 10px;">Al confirmar, se simulará una transacción segura via Transbank Webpay.</p>
-        <button class="btn-confirm" onclick="processPayment()">Confirmar y Simular Pago</button>
+        <button class="btn-confirm" onclick="processPayment()">Confirmar Transferencia Bancaria</button>
       </div>
     </div>
 
     <div class="proto-screen" id="screenProcessing">
       <div class="proc-wrap">
         <div class="spinner"></div>
-        <h3>Procesando Pago Seguro...</h3>
-        <p style="font-size:13px; color:var(--text3); margin-top:5px;">Verificando firmas y registrando transferencia...</p>
+        <h3 id="processingTitle">Procesando Transacción Segura...</h3>
+        <p style="font-size:13px; color:var(--text3); margin-top:5px;">Inscribiendo propiedad en Casa Moneda de Chile...</p>
       </div>
     </div>
 
@@ -292,11 +498,11 @@ section{padding:5.5rem 1.5rem}
           <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
         </div>
         <h2>¡Propiedad Transferida!</h2>
-        <p style="font-size:13px; color:var(--text2); margin-top:5px;">La moneda ha sido asignada legalmente al nuevo titular.</p>
-        <div class="ok-folio">Folio Oficial Transacción:<br><strong id="folioCode">CMMC-9923-2026-X</strong></div>
+        <p style="font-size:13px; color:var(--text2); margin-top:5px;">El activo ha sido adjudicado legalmente al nuevo titular.</p>
+        <div class="ok-folio">Folio Transacción:<br><strong id="folioCode">CMMC-9923-2026-X</strong></div>
         
         <button class="btn-pdf" onclick="generateOfficialPDF()">
-          <span class="btn-pdf-icon">📄</span> Descargar Certificado PDF
+          <span>📄</span> Descargar Certificado PDF Oficial
         </button>
       </div>
     </div>
@@ -307,7 +513,41 @@ section{padding:5.5rem 1.5rem}
 <div class="pdf-toast" id="toast">Certificado generado correctamente</div>
 
 <script>
-  function openModal() {
+  // Variables globales del prototipo para capturar lo seleccionado en el catálogo
+  let currentAssetName = "";
+  let currentAssetPrice = "";
+  let currentAssetId = "";
+  let selectedMethodName = "Transbank Webpay Plus";
+
+  function openPrototype(name, price, id) {
+    currentAssetName = name;
+    currentAssetPrice = price;
+    currentAssetId = id;
+
+    // Actualizar dinámicamente la UI del Modal
+    document.getElementById('modalAssetName').innerText = name;
+    document.getElementById('modalAssetPrice').innerText = price;
+    document.getElementById('modalAssetId').innerText = id;
+
+    // Generar una vista en miniatura simple según el tipo de producto
+    const visual = document.getElementById('modalAssetVisual');
+    if(name.includes('Barra')) {
+      visual.style.background = 'radial-gradient(circle at 35% 35%,#FFF5CC,#D4A017 50%,#8A6700)';
+      visual.innerText = "Oro\n1 oz";
+    } else if(name.includes('Billete')) {
+      visual.style.background = 'linear-gradient(to right, #A9DFBF, #AED6F1)';
+      visual.innerText = "Billete\n2026";
+    } else if(name.includes('Bronce')) {
+      visual.style.background = '#CD7F32';
+      visual.innerText = "Bronce\n1841";
+    } else {
+      visual.style.background = 'radial-gradient(circle at 33% 33%,#F7E48A,var(--gold) 55%,#7A5800)';
+      visual.innerText = "Chile\n$200";
+    }
+
+    // Configurar tipo de activo en la grilla del modal
+    document.getElementById('modalAssetType').innerText = name.includes('Billete') ? "Papel Moneda Oficial" : "Numismático Oficial";
+
     document.getElementById('modalPrototype').classList.add('open');
     changeScreen('screenDetail');
   }
@@ -322,36 +562,48 @@ section{padding:5.5rem 1.5rem}
     document.getElementById(screenId).classList.add('active');
   }
 
+  function selectMethod(method) {
+    // Apagar todos los tabs y descripciones
+    document.querySelectorAll('.mtab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.method-desc').forEach(d => d.classList.remove('active'));
+
+    // Encender el correspondiente
+    document.getElementById(`tab-${method}`).classList.add('active');
+    document.getElementById(`desc-${method}`).classList.add('active');
+
+    // Mapear nombre del método para colocarlo en el PDF final
+    if(method === 'tbk') selectedMethodName = "Transbank Webpay Plus";
+    if(method === 'transfer') selectedMethodName = "Transferencia Bancaria Directa";
+    if(method === 'mach') selectedMethodName = "MACH Digital Bci";
+  }
+
   function processPayment() {
+    // Actualizar el título de la carga según el método de pago elegido
+    document.getElementById('processingTitle').innerText = `Conectando con ${selectedMethodName}...`;
     changeScreen('screenProcessing');
-    // Simula 2 segundos de carga/procesamiento de Transbank
+    
     setTimeout(() => {
-      // Generar un código de folio dinámico para el prototipo
       const randomFolio = 'CMMC-' + Math.floor(1000 + Math.random() * 9000) + '-2026-X';
       document.getElementById('folioCode').innerText = randomFolio;
       changeScreen('screenSuccess');
-    }, 2000);
+    }, 1800);
   }
 
-  // FUNCIÓN CORREGIDA Y MEJORADA PARA JSPDF v2.5.1
+  // GENERADOR DE PDF PROFESIONAL RESPONDIDAS LAS EXIGENCIAS
   function generateOfficialPDF() {
-    // 1. Acceder correctamente a jsPDF en modo UMD
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
 
-    // 2. Rescatar los datos dinámicos capturados en el formulario
     const nuevoPropietario = document.getElementById('buyerName').value || 'Ana María Prado';
     const rutPropietario = document.getElementById('buyerRut').value || '15.662.341-K';
     const emailPropietario = document.getElementById('buyerEmail').value || 'ana.prado@email.cl';
     const folioTransaccion = document.getElementById('folioCode').innerText;
     const fechaEmision = new Date().toLocaleDateString('es-CL');
 
-    // 3. Estructuración Estética y Corporativa del Documento PDF
-    // Fondo de Cabecera (Azul Marino Corporativo)
+    // Estilo Visual del PDF Corporativo
     doc.setFillColor(11, 31, 58); // --navy
     doc.rect(0, 0, 210, 40, 'F');
 
-    // Texto de Cabecera
     doc.setTextColor(255, 255, 255);
     doc.setFont("Helvetica", "bold");
     doc.setFontSize(22);
@@ -360,76 +612,71 @@ section{padding:5.5rem 1.5rem}
     doc.setFont("Helvetica", "normal");
     doc.setFontSize(10);
     doc.setTextColor(201, 168, 76); // --gold-lt
-    doc.text("CASA MONEDA DE CHILE · REGISTRO DIGITAL", 20, 32);
+    doc.text("CASA MONEDA DE CHILE · SOLUCIÓN INMUTABLE", 20, 32);
 
-    // Título Principal
     doc.setTextColor(11, 31, 58);
     doc.setFont("Helvetica", "bold");
-    doc.setFontSize(16);
-    doc.text("CERTIFICADO DE AUTENTICIDAD Y TRANSFERENCIA", 20, 60);
+    doc.setFontSize(15);
+    doc.text("CERTIFICADO OFICIAL DE TRANSMISIÓN DE DOMINIO", 20, 60);
 
-    // Línea Dorada Divisoria
     doc.setDrawColor(201, 168, 76);
     doc.setLineWidth(1);
     doc.line(20, 65, 190, 65);
 
-    // Detalles de la Pieza Histórica
-    doc.setFontSize(12);
-    doc.setTextColor(58, 80, 112); // --text2
-    doc.text("Detalles del Acto Numismático:", 20, 75);
+    doc.setFontSize(11);
+    doc.setTextColor(58, 80, 112);
+    doc.text("Especificaciones técnicas del activo:", 20, 75);
 
     doc.setFont("Helvetica", "normal");
     doc.setFontSize(10);
     doc.setTextColor(11, 31, 58);
-    doc.text("• Pieza Original:", 25, 85); doc.setFont("Helvetica", "bold"); doc.text("Moneda Bicentenario $200 (Año 2010)", 60, 85);
+    doc.text("• Descripción de la Pieza:", 25, 85); doc.setFont("Helvetica", "bold"); doc.text(currentAssetName, 68, 85);
     doc.setFont("Helvetica", "normal");
-    doc.text("• ID de Registro Único:", 25, 93); doc.setFont("Helvetica", "bold"); doc.text("#MV-2010-8841X", 60, 93);
+    doc.text("• ID único del Registro:", 25, 93); doc.setFont("Helvetica", "bold"); doc.text(currentAssetId, 68, 93);
     doc.setFont("Helvetica", "normal");
-    doc.text("• Composición Metálica:", 25, 101); doc.text("Cobre-Níquel (Edición Especial)", 60, 101);
+    doc.text("• Valor de Adjudicación:", 25, 101); doc.text(`${currentAssetPrice} CLP`, 68, 101);
 
-    // Cuadro de Propiedad con Fondo Suave
-    doc.setFillColor(244, 247, 251); // --off-white
+    // Cuadro con datos del Comprador
+    doc.setFillColor(244, 247, 251); 
     doc.rect(20, 112, 170, 45, 'F');
-    doc.setDrawColor(212, 225, 240); // --soft2
+    doc.setDrawColor(212, 225, 240); 
     doc.rect(20, 112, 170, 45, 'S');
 
     doc.setTextColor(11, 31, 58);
     doc.setFont("Helvetica", "bold");
     doc.setFontSize(11);
-    doc.text("DATOS LEGALES DEL NUEVO PROPIETARIO", 25, 120);
+    doc.text("TITULAR LEGAL REGISTRADO", 25, 121);
 
     doc.setFont("Helvetica", "normal");
     doc.setFontSize(10);
-    doc.text(`Titular Registrado: ${nuevoPropietario}`, 25, 129);
-    doc.text(`RUT Documentado:  ${rutPropietario}`, 25, 136);
-    doc.text(`Email Vinculado:   ${emailPropietario}`, 25, 143);
+    doc.text(`Nombre Completo: ${nuevoPropietario}`, 25, 130);
+    doc.text(`RUT Identificador: ${rutPropietario}`, 25, 137);
+    doc.text(`Email Registrado:  ${emailPropietario}`, 25, 144);
 
-    // Información de Validación de la Transacción
+    // Liquidación
     doc.setFont("Helvetica", "normal");
-    doc.setTextColor(107, 135, 168); // --text3
-    doc.text(`Folio Transacción: ${folioTransaccion}`, 20, 175);
-    doc.text(`Fecha de Liquidación: ${fechaEmision}`, 20, 182);
-    doc.text("Medio de Pago Verificado: Transbank Webpay Plus Oficial", 20, 189);
+    doc.setTextColor(107, 135, 168);
+    doc.text(`Código Único Operacional: ${folioTransaccion}`, 20, 175);
+    doc.text(`Fecha Timbrado Digital: ${fechaEmision}`, 20, 182);
+    doc.text(`Canal Integrado de Pago: ${selectedMethodName}`, 20, 189);
 
-    // Bloque de Firma / Pie de Página Simulado
+    // Firmas fijas
     doc.setDrawColor(212, 225, 240);
-    doc.line(20, 235, 90, 235);
+    doc.line(20, 230, 90, 230);
     doc.setFontSize(9);
-    doc.text("Firma Encargado de Registro", 20, 242);
+    doc.text("Firma de Validación Tecnológica", 20, 237);
     doc.setFont("Helvetica", "bold");
-    doc.text("Casa Moneda de Chile S.A.", 20, 247);
+    doc.text("Casa Moneda de Chile S.A.", 20, 242);
 
-    // Glosa Legal Pequeña
     doc.setFont("Helvetica", "italic");
     doc.setFontSize(8);
-    doc.setTextColor(150, 150, 150);
-    doc.text("Este documento sirve como representación gráfica e interactiva de un activo verificado.", 20, 275);
-    doc.text("Casa Moneda de Chile - Prototipo de Innovación Digital 2026.", 20, 280);
+    doc.setTextColor(160, 160, 160);
+    doc.text("Este certificado emula las condiciones reales de auditoría numismática en la red MonedaViva.", 20, 275);
 
-    // 4. Salida del documento (Descarga automática en el navegador)
-    doc.save(`Certificado-${folioTransaccion}.pdf`);
+    // Guardado y descarga automatizada
+    doc.save(`Certificado-${currentAssetId}.pdf`);
 
-    // Feedback visual (Toast)
+    // Mostrar Toast flotante informativo
     const toast = document.getElementById('toast');
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 3000);
